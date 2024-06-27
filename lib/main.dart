@@ -1,9 +1,9 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:success/models/user.dart';
-import 'package:success/services/local_db_services.dart';
-import 'package:success/views/mainview.dart';
 
+import 'package:success/services/local_db_sharepref.dart';
+import 'package:success/views/mainview.dart';
 import 'package:success/views/introduceView.dart';
 
 void main() {
@@ -25,32 +25,19 @@ class _SuccessAppState extends State<SuccessApp> {
   @override
   void initState() {
     super.initState();
-    //logout();
     fetchUserInfos();
   }
 
-  void logout() async {
-    await DatabaseManager.instance.clearDatabase();
-  }
-
   void fetchUserInfos() async {
-    final User? loggedUser = await DatabaseManager.instance.getLoggedUser();
-
-    try {
-      if (loggedUser!.phone == null || loggedUser.phone == "") {
-        setState(() {
-          isConnect = false;
-        });
-      } else {
-        setState(() {
-          isConnect = true;
-          user = loggedUser;
-        });
-        debugPrint(user!.phone.toString());
-      }
-    } catch (e) {
+    final User? loggedUser = await getLoggedUser();
+    if (loggedUser == null) {
       setState(() {
         isConnect = false;
+      });
+    } else {
+      setState(() {
+        isConnect = true;
+        user = loggedUser;
       });
     }
   }

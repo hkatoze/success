@@ -63,7 +63,7 @@ class DatabaseManager {
     );
   }
 
-  void updateUser(User user) async {
+  Future<void> updateUser(User user) async {
     final Database db = await database;
     await db
         .update("users", user.toMap(), where: "id = ?", whereArgs: [user.id]);

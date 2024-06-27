@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:success/models/filiere.dart";
 import "package:success/models/personalityTestResult.dart";
 import "package:success/models/qualifier.dart";
 
@@ -547,3 +548,466 @@ const List<Temperament> temperaments = [
       description:
           "Tu es stable et serein, rarement perturbé par les événements extérieurs. Ta combinaison de tranquillité et de résilience te permet de rester calme dans des situations stressantes. Cependant, tu peux être paresseux et indifférent aux changements, préférant maintenir le statu quo. Ta capacité à rester détendu et à prendre les choses comme elles viennent est un atout, mais veille à ne pas te laisser freiner par l'inaction. Ton approche équilibrée et posée fait de toi un pilier de stabilité pour ceux qui t'entourent.")
 ];
+
+final List<Filiere> filieres = [
+  // Sciences de Technologies
+  const Filiere(
+    id: 1,
+    filiere: "Genie Civil",
+    description:
+        "Le génie civil concerne la conception, la construction et la maintenance des infrastructures comme les routes, les ponts, les bâtiments, les tunnels et les systèmes de traitement des eaux. Les ingénieurs civils travaillent sur des projets qui améliorent la qualité de vie et l'environnement.",
+    debouches: [
+      "Ingénieur civil",
+      "Chef de chantier",
+      "Consultant en génie civil",
+      "Responsable de la planification urbaine",
+      "Directeur des travaux publics",
+      "Ingénieur en structures",
+      "Inspecteur de bâtiment",
+      "Ingénieur en hydraulique",
+      "Gestionnaire de projet"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 2,
+    filiere: "Maintenance industrielle",
+    description:
+        "La maintenance industrielle vise à assurer le bon fonctionnement et la longévité des équipements et des machines dans les usines et les sites de production. Elle comprend la maintenance préventive, corrective et prédictive, ainsi que la gestion de la sécurité.",
+    debouches: [
+      "Technicien de maintenance",
+      "Responsable de maintenance",
+      "Ingénieur de maintenance",
+      "Superviseur de la maintenance",
+      "Spécialiste en fiabilité",
+      "Consultant en maintenance industrielle",
+      "Coordinateur de maintenance",
+      "Analyste de maintenance",
+      "Gestionnaire d'actifs"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 3,
+    filiere: "Genie Minier",
+    description:
+        "Le génie minier implique l'exploration, l'extraction et la gestion des ressources minérales de la Terre. Les ingénieurs miniers travaillent sur l'optimisation des méthodes d'extraction, la sécurité des mines, et la réduction de l'impact environnemental.",
+    debouches: [
+      "Ingénieur minier",
+      "Géologue",
+      "Responsable de site minier",
+      "Consultant en exploration minière",
+      "Ingénieur en sécurité minière",
+      "Gestionnaire des ressources minérales",
+      "Analyste des ressources naturelles",
+      "Directeur d'exploitation minière",
+      "Chercheur en ingénierie minière"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 4,
+    filiere: "Genie Biomédical",
+    description:
+        "Le génie biomédical combine les principes de l'ingénierie et des sciences biologiques pour développer des technologies et des dispositifs médicaux. Les ingénieurs biomédicaux travaillent sur des équipements de diagnostic, des prothèses, des implants et des systèmes de soins de santé.",
+    debouches: [
+      "Ingénieur biomédical",
+      "Technicien biomédical",
+      "Consultant en équipements médicaux",
+      "Chef de projet en dispositifs médicaux",
+      "Responsable de la maintenance des équipements hospitaliers",
+      "Chercheur en biomatériaux",
+      "Spécialiste en imagerie médicale",
+      "Concepteur de prothèses",
+      "Ingénieur en biotechnologie"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 5,
+    filiere: "Agroalimentaire",
+    description:
+        "L'agroalimentaire englobe la transformation des produits agricoles en produits alimentaires. Ce domaine couvre la production, la transformation, l'emballage, la distribution et le contrôle de la qualité des aliments.",
+    debouches: [
+      "Ingénieur agroalimentaire",
+      "Responsable qualité",
+      "Chef de production",
+      "Consultant en sécurité alimentaire",
+      "Directeur d'usine agroalimentaire",
+      "Spécialiste en développement de produits",
+      "Technologue alimentaire",
+      "Gestionnaire de la chaîne d'approvisionnement",
+      "Analyste en nutrition"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 6,
+    filiere: "Energies Renouvelables",
+    description:
+        "Les énergies renouvelables se concentrent sur le développement et la gestion des sources d'énergie alternatives, comme le solaire, l'éolien, la biomasse et l'hydroélectricité. Ce domaine vise à réduire la dépendance aux combustibles fossiles et à promouvoir un avenir énergétique durable.",
+    debouches: [
+      "Ingénieur en énergies renouvelables",
+      "Consultant en énergie",
+      "Gestionnaire de projet énergétique",
+      "Spécialiste en efficacité énergétique",
+      "Chercheur en technologies renouvelables",
+      "Responsable de la production d'énergie renouvelable",
+      "Analyste en politiques énergétiques",
+      "Concepteur de systèmes énergétiques",
+      "Technicien en maintenance des énergies renouvelables"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 7,
+    filiere: "Electronique et Informatique Industrielle",
+    description:
+        "Ce domaine implique la conception, le développement et la maintenance des systèmes électroniques et informatiques utilisés dans les processus industriels. Cela comprend l'automatisation, la robotique et les systèmes embarqués.",
+    debouches: [
+      "Ingénieur en électronique",
+      "Technicien en informatique industrielle",
+      "Consultant en systèmes industriels",
+      "Développeur de systèmes embarqués",
+      "Responsable de l'automatisation",
+      "Spécialiste en robotique industrielle",
+      "Concepteur de circuits électroniques",
+      "Gestionnaire de projets industriels",
+      "Analyste en systèmes industriels"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 8,
+    filiere: "Reseaux informatiques et Telecoms",
+    description:
+        "Ce domaine couvre la gestion, la maintenance et la sécurité des réseaux informatiques et des systèmes de télécommunications. Les professionnels assurent le bon fonctionnement des infrastructures de communication.",
+    debouches: [
+      "Ingénieur réseaux",
+      "Technicien télécoms",
+      "Consultant en télécommunications",
+      "Architecte de réseaux",
+      "Administrateur réseau",
+      "Spécialiste en cybersécurité",
+      "Analyste de systèmes",
+      "Gestionnaire de la sécurité des systèmes d'information",
+      "Concepteur de réseaux"
+    ],
+    departement: "ST",
+  ),
+  const Filiere(
+    id: 9,
+    filiere: "Electrotechnique",
+    description:
+        "L'électrotechnique se concentre sur l'étude et l'application de l'électricité et de l'électromécanique. Les ingénieurs travaillent sur des systèmes électriques, des moteurs, des générateurs, et des équipements de transmission et de distribution d'électricité.",
+    debouches: [
+      "Ingénieur électrotechnique",
+      "Technicien électrotechnique",
+      "Responsable de maintenance électrique",
+      "Consultant en électricité",
+      "Chef de projet en systèmes électriques",
+      "Spécialiste en conversion d'énergie",
+      "Concepteur de systèmes électriques",
+      "Gestionnaire de réseaux électriques",
+      "Analyste en systèmes énergétiques"
+    ],
+    departement: "ST",
+  ),
+  // Sciences de Gestion
+  const Filiere(
+    id: 10,
+    filiere: "Logistique-Transport-Transit",
+    description:
+        "La logistique et le transport impliquent la gestion des flux de marchandises, la planification des itinéraires, la gestion des stocks et la coordination des opérations de transit. Les professionnels optimisent les chaînes d'approvisionnement pour réduire les coûts et améliorer l'efficacité.",
+    debouches: [
+      "Logisticien",
+      "Responsable transport",
+      "Consultant en logistique",
+      "Gestionnaire de la chaîne d'approvisionnement",
+      "Coordinateur de transit",
+      "Directeur des opérations logistiques",
+      "Analyste logistique",
+      "Planificateur de transport",
+      "Spécialiste en gestion des stocks"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 11,
+    filiere: "Finance-Comptabilité",
+    description:
+        "La finance et la comptabilité concernent la gestion financière des entreprises, l'analyse des états financiers, la planification budgétaire, et la prise de décisions économiques. Les professionnels veillent à la santé financière et à la conformité réglementaire.",
+    debouches: [
+      "Comptable",
+      "Contrôleur de gestion",
+      "Analyste financier",
+      "Directeur financier",
+      "Auditeur interne",
+      "Consultant en gestion financière",
+      "Gestionnaire de trésorerie",
+      "Analyste en planification financière",
+      "Responsable de la conformité"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 12,
+    filiere: "Communication d'entreprise",
+    description:
+        "La communication d'entreprise englobe la gestion de la communication interne et externe, la gestion de la marque, les relations publiques, et la stratégie de communication. Les professionnels assurent une communication cohérente et efficace avec toutes les parties prenantes.",
+    debouches: [
+      "Responsable communication",
+      "Chargé de communication",
+      "Consultant en communication",
+      "Spécialiste en relations publiques",
+      "Directeur de la communication",
+      "Community manager",
+      "Gestionnaire de la marque",
+      "Analyste en communication interne",
+      "Planificateur d'événements"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 13,
+    filiere: "Comptabilité-Controle-audit",
+    description:
+        "Cette filière se concentre sur la comptabilité avancée, le contrôle de gestion et l'audit. Les professionnels veillent à la précision des enregistrements financiers, à l'optimisation des processus de gestion, et à la conformité aux normes et réglementations.",
+    debouches: [
+      "Auditeur",
+      "Contrôleur de gestion",
+      "Comptable senior",
+      "Consultant en audit",
+      "Responsable de la conformité",
+      "Directeur financier",
+      "Analyste de risques financiers",
+      "Gestionnaire de la performance",
+      "Inspecteur des finances"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 14,
+    filiere: "Secretariat de Direction Bureautique",
+    description:
+        "Le secrétariat de direction et la bureautique incluent la gestion administrative, la coordination des activités de bureau, la gestion des agendas et la communication avec les différents services. Les professionnels assurent le bon fonctionnement des opérations administratives.",
+    debouches: [
+      "Secrétaire de direction",
+      "Assistant de direction",
+      "Responsable administratif",
+      "Gestionnaire de bureau",
+      "Assistant personnel",
+      "Coordonnateur des services administratifs",
+      "Spécialiste en gestion documentaire",
+      "Assistant exécutif",
+      "Réceptionniste"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 15,
+    filiere: "Banque et Microfinance",
+    description:
+        "Ce domaine couvre la gestion des services bancaires, la finance de marché, et la microfinance. Les professionnels travaillent sur l'octroi de prêts, la gestion des portefeuilles d'investissement, et le soutien financier aux petites entreprises.",
+    debouches: [
+      "Banquier",
+      "Conseiller en microfinance",
+      "Gestionnaire de portefeuille",
+      "Analyste de crédit",
+      "Consultant en services bancaires",
+      "Responsable de la gestion des risques",
+      "Directeur d'agence bancaire",
+      "Spécialiste en finance inclusive",
+      "Analyste des investissements"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 16,
+    filiere: "Gestion des ressources humaines",
+    description:
+        "La gestion des ressources humaines inclut le recrutement, la formation, la gestion des performances, et le développement des talents. Les professionnels veillent à ce que l'organisation dispose des compétences nécessaires et favorisent un environnement de travail positif.",
+    debouches: [
+      "Responsable RH",
+      "Chargé de recrutement",
+      "Consultant RH",
+      "Gestionnaire de formation",
+      "Spécialiste en relations de travail",
+      "Directeur des ressources humaines",
+      "Gestionnaire de la paie",
+      "Spécialiste en développement organisationnel",
+      "Analyste des ressources humaines"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 17,
+    filiere: "Gestions des projets",
+    description:
+        "La gestion de projets comprend la planification, l'exécution, le suivi et la clôture des projets. Les professionnels utilisent des méthodologies de gestion de projet pour s'assurer que les projets sont livrés à temps, dans les limites du budget et selon les spécifications.",
+    debouches: [
+      "Chef de projet",
+      "Consultant en gestion de projet",
+      "Planificateur de projet",
+      "Coordinateur de projet",
+      "Directeur de programme",
+      "Spécialiste en gestion agile",
+      "Analyste de projet",
+      "Gestionnaire de la qualité",
+      "Responsable de la PMO"
+    ],
+    departement: "SG",
+  ),
+  const Filiere(
+    id: 18,
+    filiere: "Marketing et gestion commerciale",
+    description:
+        "Ce domaine implique la gestion des activités marketing et commerciales, y compris la recherche de marché, la stratégie marketing, la gestion des ventes, et la relation client. Les professionnels travaillent à augmenter les ventes et à développer des relations durables avec les clients.",
+    debouches: [
+      "Responsable marketing",
+      "Chef de produit",
+      "Consultant en marketing",
+      "Directeur des ventes",
+      "Analyste de marché",
+      "Spécialiste en gestion de la relation client",
+      "Gestionnaire de marque",
+      "Directeur commercial",
+      "Responsable des opérations de vente"
+    ],
+    departement: "SG",
+  ),
+];
+List<Filiere> recommanderFilieres(String temperament) {
+  switch (temperament) {
+    case "populaire sanguin":
+      return filieres
+          .where((filiere) => [
+                "Marketing et gestion commerciale",
+                "Communication d'entreprise",
+                "Logistique-Transport-Transit"
+              ].contains(filiere.filiere))
+          .toList();
+    case "populaire colérique":
+      return filieres
+          .where((filiere) => [
+                "Marketing et gestion commerciale",
+                "Gestion des ressources humaines",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "populaire mélancolique":
+      return filieres
+          .where((filiere) => [
+                "Communication d'entreprise",
+                "Finance-Comptabilité",
+                "Electronique et Informatique Industrielle"
+              ].contains(filiere.filiere))
+          .toList();
+    case "populaire flegmatique":
+      return filieres
+          .where((filiere) => [
+                "Logistique-Transport-Transit",
+                "Communication d'entreprise",
+                "Banque et Microfinance"
+              ].contains(filiere.filiere))
+          .toList();
+    case "puissant sanguin":
+      return filieres
+          .where((filiere) => [
+                "Genie Civil",
+                "Gestion des ressources humaines",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "puissant colérique":
+      return filieres
+          .where((filiere) => [
+                "Genie Civil",
+                "Gestion des ressources humaines",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "puissant mélancolique":
+      return filieres
+          .where((filiere) => [
+                "Genie Civil",
+                "Finance-Comptabilité",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "puissant flegmatique":
+      return filieres
+          .where((filiere) => [
+                "Gestion des ressources humaines",
+                "Logistique-Transport-Transit",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "parfait sanguin":
+      return filieres
+          .where((filiere) => [
+                "Finance-Comptabilité",
+                "Comptabilité-Controle-audit",
+                "Electronique et Informatique Industrielle"
+              ].contains(filiere.filiere))
+          .toList();
+    case "parfait colérique":
+      return filieres
+          .where((filiere) => [
+                "Genie Civil",
+                "Finance-Comptabilité",
+                "Comptabilité-Controle-audit"
+              ].contains(filiere.filiere))
+          .toList();
+    case "parfait mélancolique":
+      return filieres
+          .where((filiere) => [
+                "Finance-Comptabilité",
+                "Comptabilité-Controle-audit",
+                "Electronique et Informatique Industrielle"
+              ].contains(filiere.filiere))
+          .toList();
+    case "parfait flegmatique":
+      return filieres
+          .where((filiere) => [
+                "Finance-Comptabilité",
+                "Secretariat de Direction Bureautique",
+                "Banque et Microfinance"
+              ].contains(filiere.filiere))
+          .toList();
+    case "pacifique sanguin":
+      return filieres
+          .where((filiere) => [
+                "Logistique-Transport-Transit",
+                "Communication d'entreprise",
+                "Banque et Microfinance"
+              ].contains(filiere.filiere))
+          .toList();
+    case "pacifique colérique":
+      return filieres
+          .where((filiere) => [
+                "Gestion des ressources humaines",
+                "Logistique-Transport-Transit",
+                "Gestions des projets"
+              ].contains(filiere.filiere))
+          .toList();
+    case "pacifique mélancolique":
+      return filieres
+          .where((filiere) => [
+                "Finance-Comptabilité",
+                "Secretariat de Direction Bureautique",
+                "Banque et Microfinance"
+              ].contains(filiere.filiere))
+          .toList();
+    case "pacifique flegmatique":
+      return filieres
+          .where((filiere) => [
+                "Logistique-Transport-Transit",
+                "Secretariat de Direction Bureautique",
+                "Banque et Microfinance"
+              ].contains(filiere.filiere))
+          .toList();
+    default:
+      return [];
+  }
+}

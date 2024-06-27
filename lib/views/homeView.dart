@@ -19,6 +19,12 @@ class _HomeviewState extends State<Homeview> {
 
   int selectedIndex = 1;
 
+  void initState() {
+    super.initState();
+
+    debugPrint('DomimantForceTemp: ${widget.user.dominantWeaknessTemperament}');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +80,7 @@ class _HomeviewState extends State<Homeview> {
                             _textCirle("TEMPERAMENT"),
                           ],
                         ))),
-                Positioned(
+                /*        Positioned(
                   top: 200,
                   left: kWidth(context) * 0,
                   right: kWidth(context) * 0.35,
@@ -101,11 +107,11 @@ class _HomeviewState extends State<Homeview> {
                       ],
                     ),
                   ),
-                ),
+                ) */
                 Positioned(
-                  top: 300,
-                  left: kWidth(context) * 0.5,
-                  right: kWidth(context) * 0,
+                  top: 250,
+                  left: kWidth(context) * 0,
+                  right: kWidth(context) * 0.35,
                   child: Container(
                       alignment: Alignment.bottomLeft,
                       child: Column(
@@ -120,7 +126,24 @@ class _HomeviewState extends State<Homeview> {
                                   "FILIERES",
                                   const Color(0xFF55acf3),
                                   "assets/videos.png",
-                                  0.5,
+                                  widget.user.dominantForceTemperament != "" &&
+                                          widget.user
+                                                  .dominantWeaknessTemperament ==
+                                              ""
+                                      ? 0.5
+                                      : (widget.user.dominantForceTemperament ==
+                                                  "" &&
+                                              widget.user
+                                                      .dominantWeaknessTemperament ==
+                                                  "")
+                                          ? 0
+                                          : widget.user.dominantForceTemperament ==
+                                                      "" &&
+                                                  widget.user
+                                                          .dominantWeaknessTemperament !=
+                                                      ""
+                                              ? 0.5
+                                              : 1,
                                   selectedIndex == 3,
                                   false,
                                   widget.user)),
@@ -130,7 +153,7 @@ class _HomeviewState extends State<Homeview> {
                       )),
                 ),
                 Positioned(
-                  top: 500,
+                  top: 470,
                   left: kWidth(context) * 0,
                   right: kWidth(context) * 0,
                   child: Container(

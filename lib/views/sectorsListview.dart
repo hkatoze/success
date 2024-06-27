@@ -6,11 +6,13 @@ import 'package:flutter_chat_bubble/chat_bubble.dart';
 import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:success/constants.dart';
+import 'package:success/models/filiere.dart';
 import 'package:success/models/user.dart';
 import 'package:success/models/youtubeVideo.dart';
 import 'package:success/services/api_services.dart';
 
 import 'package:success/views/components/defaultBtn.dart';
+import 'package:success/views/sectorView.dart';
 
 import 'package:success/views/startTemperamentTestView.dart';
 import 'package:success/views/videoPlayerScreen.dart';
@@ -26,10 +28,16 @@ class SectorsListview extends StatefulWidget {
 class _SectorsListviewState extends State<SectorsListview> {
   double toolbarIndex = 1;
   late Future<List<YoutubeVideo>> _videos;
+  List<Filiere> recommandedFilieres = [];
 
   @override
   void initState() {
     super.initState();
+    fetchInitVideos();
+    setState(() {
+      recommandedFilieres = recommanderFilieres(
+          '${widget.user.dominantForceTemperament} ${widget.user.dominantWeaknessTemperament}');
+    });
   }
 
   Future<void> fetchYoutubeVideos() async {
@@ -37,12 +45,17 @@ class _SectorsListviewState extends State<SectorsListview> {
   }
 
   void fetchInitVideos() async {
-    if (widget.user.skills != "") {
+    if (widget.user.dominantForceTemperament != "") {
       setState(() {
         _videos = fetchVideos();
       });
     } else {}
   }
+
+  final List<Filiere> stFilieres =
+      filieres.where((filiere) => filiere.departement == 'ST').toList();
+  final List<Filiere> sgFilieres =
+      filieres.where((filiere) => filiere.departement == 'SG').toList();
 
   @override
   Widget build(BuildContext context) {
@@ -116,10 +129,8 @@ class _SectorsListviewState extends State<SectorsListview> {
                   onRefresh: fetchYoutubeVideos,
                   color: kquinquinaryColor,
                   child: toolbarIndex == 1 &&
-                          (widget.user.temperament == null ||
-                              widget.user.temperament == "" ||
-                              widget.user.skills == null ||
-                              widget.user.skills == "")
+                          (widget.user.dominantForceTemperament == "" ||
+                              widget.user.dominantWeaknessTemperament == "")
                       ? SizedBox(
                           child: Column(
                             children: [
@@ -190,41 +201,104 @@ class _SectorsListviewState extends State<SectorsListview> {
                             ],
                           ),
                         )
-                      : FutureBuilder<List<YoutubeVideo>>(
-                          future: _videos,
-                          builder: (context, snapshot) {
-                            if (snapshot.connectionState ==
-                                ConnectionState.waiting) {
-                              return const Center(
-                                  child: CircularProgressIndicator());
-                            } else if (snapshot.hasError) {
-                              return Center(
-                                  child: Text('Error: ${snapshot.error}'));
-                            } else if (!snapshot.hasData ||
-                                snapshot.data!.isEmpty) {
-                              return const Center(
-                                  child: Text('No videos found'));
-                            } else {
-                              return ListView.builder(
-                                itemCount: snapshot.data!.length,
+                      : toolbarIndex == 1 &&
+                              (widget.user.dominantForceTemperament != "" &&
+                                  widget.user.dominantWeaknessTemperament != "")
+                          ? SizedBox(
+                              height: kHeight(context) * 0.85,
+                              child: ListView(
                                 physics: const BouncingScrollPhysics(),
-                                itemBuilder: (context, index) {
-                                  YoutubeVideo video = snapshot.data![index];
-                                  return VideoItem(
-                                    id: video.id,
-                                    title: video.title,
-                                    thumbnailUrl: video.thumbnailUrl,
-                                    duration: video.duration,
-                                    viewCount: video.viewCount,
-                                    likeCount: video.likeCount,
-                                    shareCount: video.shareCount,
-                                    user: widget.user,
-                                  );
-                                },
-                              );
-                            }
-                          },
-                        ),
+                                children: [
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  SizedBox(
+                                    height: 435,
+                                    child: ListView.builder(
+                                        itemCount: recommandedFilieres.length,
+                                        physics:
+                                            const NeverScrollableScrollPhysics(),
+                                        itemBuilder: (context, index) =>
+                                            FiliereItem(
+                                                user: widget.user,
+                                                filiere: recommandedFilieres[
+                                                    index])),
+                                  ),
+                                ],
+                              ),
+                            )
+                          : SizedBox(
+                              height: kHeight(context) * 0.85,
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 10, vertical: 10),
+                                    decoration: BoxDecoration(
+                                        color: ktertiaryColor.withOpacity(0.3)),
+                                    child: const Row(
+                                      children: [
+                                        Text(
+                                          "SCIENCES DE TECHNOLOGIE",
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  SizedBox(
+                                    height: 435,
+                                    child: ListView.builder(
+                                        itemCount: stFilieres.length,
+                                        physics:
+                                            const NeverScrollableScrollPhysics(),
+                                        itemBuilder: (context, index) =>
+                                            FiliereItem(
+                                                user: widget.user,
+                                                filiere: stFilieres[index])),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 10, vertical: 10),
+                                    decoration: const BoxDecoration(
+                                        color: ksecondaryColor),
+                                    child: const Row(
+                                      children: [
+                                        Text(
+                                          "SCIENCES DE GESTION",
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  SizedBox(
+                                    height: 465,
+                                    child: ListView.builder(
+                                        itemCount: sgFilieres.length,
+                                        physics: const BouncingScrollPhysics(),
+                                        itemBuilder: (context, index) =>
+                                            FiliereItem(
+                                                user: widget.user,
+                                                filiere: sgFilieres[index])),
+                                  ),
+                                ],
+                              ),
+                            ),
                 ),
               )
             ],
@@ -297,152 +371,71 @@ class _ToolbarBtnState extends State<ToolbarBtn> {
   }
 }
 
-class VideoItem extends StatelessWidget {
-  final String id;
-  final String title;
-  final String thumbnailUrl;
-  final String duration;
-  final int viewCount;
-  final int likeCount;
-  final int shareCount;
+class FiliereItem extends StatelessWidget {
+  final Filiere filiere;
   final User user;
-  const VideoItem(
-      {super.key,
-      required this.id,
-      required this.title,
-      required this.thumbnailUrl,
-      required this.duration,
-      required this.viewCount,
-      required this.likeCount,
-      required this.shareCount,
-      required this.user});
+  const FiliereItem({super.key, required this.filiere, required this.user});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-      margin: const EdgeInsets.only(bottom: 20),
-      decoration: BoxDecoration(
-          color: kprimaryColor, borderRadius: BorderRadius.circular(25)),
-      child: Column(
-        children: [
-          Container(
-            width: double.infinity,
-            height: 110,
-            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            decoration: BoxDecoration(
-                color: kprimaryColor,
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage(thumbnailUrl)),
-                borderRadius: BorderRadius.circular(25)),
-            child: Column(children: [
-              const Expanded(child: SizedBox()),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+    return Bounce(
+      onTap: () {
+        Navigator.push(
+            context,
+            PageTransition(
+                type: PageTransitionType.scale,
+                alignment: Alignment.center,
+                duration: 1000.milliseconds,
+                curve: Curves.ease,
+                reverseDuration: 1000.milliseconds,
+                childCurrent: SectorsListview(
+                  user: user,
+                ),
+                child: SectorView(
+                  filiere: filiere,
+                )));
+      },
+      child: Container(
+        margin: const EdgeInsets.only(left: 30, bottom: 20),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            SizedBox(
+              width: 200,
+              child: Row(
                 children: [
-                  VideoDataInfos(
-                      infos: '$viewCount views', icon: Icons.visibility),
-                  VideoDataInfos(
-                      infos: '$likeCount likes', icon: Icons.thumb_up),
-                  VideoDataInfos(infos: '$shareCount shares', icon: Icons.share)
+                  Icon(
+                    Icons.circle,
+                    color: filiere.departement == "ST"
+                        ? ktertiaryColor.withOpacity(0.3)
+                        : ksecondaryColor,
+                    size: 15,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                      child: Text(
+                    filiere.filiere,
+                    overflow: TextOverflow.clip,
+                    maxLines: 2,
+                    style: const TextStyle(
+                        fontSize: 15, fontWeight: FontWeight.bold),
+                  ))
                 ],
               ),
-            ]),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Container(
-            width: double.infinity,
-            height: 110,
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(25)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: kWidth(context) * 0.61,
-                      child: Text(
-                        title,
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 2,
-                        style: const TextStyle(
-                            fontSize: 13, fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(5),
-                      width: 50,
-                      decoration: BoxDecoration(
-                          color: kprimaryColor,
-                          borderRadius: BorderRadius.circular(25)),
-                      child: Center(
-                        child: Text(
-                          duration,
-                          style: const TextStyle(
-                            fontSize: 13,
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-                const Expanded(child: SizedBox()),
-                Bounce(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          PageTransition(
-                              type: PageTransitionType.scale,
-                              alignment: Alignment.center,
-                              duration: const Duration(milliseconds: 500),
-                              reverseDuration:
-                                  const Duration(milliseconds: 500),
-                              curve: Curves.ease,
-                              childCurrent: SectorsListview(user: user),
-                              child: VideoPlayerScreen(
-                                videoId: id,
-                                title: title,
-                              )));
-                    },
-                    child: Container(
-                        padding: const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: kprimaryColor,
-                            borderRadius: BorderRadius.circular(25)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const SizedBox(
-                              width: 30,
-                              height: 30,
-                            ),
-                            const Text(
-                              "Lire",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            Container(
-                              width: 30,
-                              height: 30,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(100)),
-                              child: const Icon(Icons.play_arrow),
-                            )
-                          ],
-                        )))
-              ],
             ),
-          ),
-        ],
+            const Row(
+              children: [
+                Text(
+                  "Découvrir",
+                  style: TextStyle(color: Colors.grey, fontSize: 13),
+                ),
+                Icon(Icons.arrow_forward_ios)
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

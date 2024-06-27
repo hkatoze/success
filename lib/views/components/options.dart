@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:success/constants.dart';
 import 'package:success/models/user.dart';
 import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/components/option.dart';
 
 class Options extends StatefulWidget {
@@ -31,7 +32,7 @@ class _OptionsState extends State<Options> {
   }
 
   void fetchUserInfos() async {
-    final User? loggedUser = await DatabaseManager.instance.getLoggedUser();
+    final User? loggedUser = await getLoggedUser();
 
     setState(() {
       user = loggedUser;
@@ -72,7 +73,7 @@ class _OptionsState extends State<Options> {
                     _selectedOption = value!;
                   });
                   if (widget.options.first.option == "BAC A") {
-                    DatabaseManager.instance.updateUser(User(
+                    updateUser(User(
                       id: user!.id,
                       bacYear: user!.bacYear,
                       comeFromCountry: user!.comeFromCountry,
@@ -81,17 +82,16 @@ class _OptionsState extends State<Options> {
                       gender: user!.gender,
                       phone: user!.phone,
                       typeOfBac: widget.options[index].option,
-                      dominantForceTemperament: user!.dominantForceTemperament,
-                      dominantWeaknessTemperament:
-                          user!.dominantWeaknessTemperament,
-                      temperament: user!.temperament,
-                      skills: user!.skills,
+                      dominantForceTemperament: "",
+                      dominantWeaknessTemperament: "",
+                      temperament: "",
+                      skills: "",
                     ));
                     debugPrint(widget.options[index].option);
                   }
 
                   if (widget.options.first.option == "2024") {
-                    DatabaseManager.instance.updateUser(User(
+                    updateUser(User(
                       id: user!.id,
                       bacYear: widget.options[index].option,
                       comeFromCountry: user!.comeFromCountry,
@@ -100,17 +100,16 @@ class _OptionsState extends State<Options> {
                       gender: user!.gender,
                       phone: user!.phone,
                       typeOfBac: user!.typeOfBac,
-                      dominantForceTemperament: user!.dominantForceTemperament,
-                      dominantWeaknessTemperament:
-                          user!.dominantWeaknessTemperament,
-                      temperament: user!.temperament,
-                      skills: user!.skills,
+                      dominantForceTemperament: "",
+                      dominantWeaknessTemperament: "",
+                      temperament: "",
+                      skills: "",
                     ));
                     debugPrint(widget.options[index].option);
                   }
 
                   if (widget.options.first.option == "HOMME") {
-                    DatabaseManager.instance.updateUser(User(
+                    updateUser(User(
                       id: user!.id,
                       bacYear: user!.bacYear,
                       comeFromCountry: user!.comeFromCountry,
@@ -119,16 +118,15 @@ class _OptionsState extends State<Options> {
                       gender: widget.options[index].option,
                       phone: user!.phone,
                       typeOfBac: user!.typeOfBac,
-                      dominantForceTemperament: user!.dominantForceTemperament,
-                      dominantWeaknessTemperament:
-                          user!.dominantWeaknessTemperament,
-                      temperament: user!.temperament,
-                      skills: user!.skills,
+                      dominantForceTemperament: "",
+                      dominantWeaknessTemperament: "",
+                      temperament: "",
+                      skills: "",
                     ));
                     debugPrint(widget.options[index].option);
                   }
                   if (widget.options.first.option == "Bénin") {
-                    DatabaseManager.instance.updateUser(User(
+                    updateUser(User(
                       id: user!.id,
                       bacYear: user!.bacYear,
                       comeFromCountry: widget.options[index].option,
@@ -137,16 +135,15 @@ class _OptionsState extends State<Options> {
                       gender: user!.gender,
                       phone: user!.phone,
                       typeOfBac: user!.typeOfBac,
-                      dominantForceTemperament: user!.dominantForceTemperament,
-                      dominantWeaknessTemperament:
-                          user!.dominantWeaknessTemperament,
-                      temperament: user!.temperament,
-                      skills: user!.skills,
+                      dominantForceTemperament: "",
+                      dominantWeaknessTemperament: "",
+                      temperament: "",
+                      skills: "",
                     ));
                     debugPrint(widget.options[index].option);
                   }
                   if (widget.options.first.option == "Dédougou") {
-                    DatabaseManager.instance.updateUser(User(
+                    updateUser(User(
                       id: user!.id,
                       bacYear: user!.bacYear,
                       comeFromCountry: user!.comeFromCountry,
@@ -155,11 +152,10 @@ class _OptionsState extends State<Options> {
                       gender: user!.gender,
                       phone: user!.phone,
                       typeOfBac: user!.typeOfBac,
-                      dominantForceTemperament: user!.dominantForceTemperament,
-                      dominantWeaknessTemperament:
-                          user!.dominantWeaknessTemperament,
-                      temperament: user!.temperament,
-                      skills: user!.skills,
+                      dominantForceTemperament: "",
+                      dominantWeaknessTemperament: "",
+                      temperament: "",
+                      skills: "",
                     ));
                     debugPrint(widget.options[index].option);
                   }

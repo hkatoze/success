@@ -5,6 +5,7 @@ import 'package:success/constants.dart';
 import 'package:success/main.dart';
 import 'package:success/models/user.dart';
 import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/mainview.dart';
 
 class ProfilView extends StatefulWidget {
@@ -121,7 +122,7 @@ class _ProfilViewState extends State<ProfilView> {
                           right: kWidth(context) * 0.26,
                           child: GestureDetector(
                             onTap: () async {
-                              await DatabaseManager.instance.clearDatabase();
+                              await clearPreferences();
                               Navigator.push(
                                   context,
                                   PageTransition(

@@ -38,6 +38,7 @@ dependencies:
   http: ^1.2.0
   youtube_player_flutter: ^9.0.1
   neon_widgets: ^2.0.0
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:

@@ -10,6 +10,7 @@ import 'package:success/models/personalityTestResult.dart';
 import 'package:success/models/qualifier.dart';
 import 'package:success/models/user.dart';
 import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/components/defaultBtn.dart';
 import 'package:success/views/fullPersonalityTest.dart';
 import 'package:success/views/mainview.dart';
@@ -33,7 +34,7 @@ class TemperamentTestView extends StatefulWidget {
 }
 
 class _TemperamentTestViewState extends State<TemperamentTestView> {
-  double progressBar = 0;
+  double progressBar = 2.5;
   bool isFirstLaunch = true;
   bool isSelect = false;
   int _selectedOption = 0;
@@ -45,8 +46,11 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
   void initState() {
     super.initState();
     setState(() {
-      progressBar = widget.isForceOrFaiblesse == "FORCES" ? 2.5 : 50;
+      progressBar = widget.isForceOrFaiblesse == 'FORCES' ? 2.5 : 50;
     });
+  }
+
+  void launchPop() {
     if (isFirstLaunch) {
       Future.delayed(700.milliseconds, () {
         lauchPopup();
@@ -80,7 +84,7 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  "Parmis les ${widget.isForceOrFaiblesse == "FORCES" ? 'forces' : 'faiblesses'} qui te seront proposées, tu choisiras celles qui te correspondent le mieux",
+                  "Parmis les ${widget.isForceOrFaiblesse == "FORCES" ? 'forces' : 'faiblesses'} qui te sont proposées, tu choisis celles qui te correspondent le mieux",
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
@@ -89,8 +93,15 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
           ),
         ),
       ),
+      onDismissCallback: (type) {
+        setState(() {
+          progressBar = widget.isForceOrFaiblesse == 'FORCES' ? 2.5 : 50;
+          isFirstLaunch = false;
+        });
+      },
       btnOkOnPress: () {
         setState(() {
+          progressBar = widget.isForceOrFaiblesse == 'FORCES' ? 2.5 : 50;
           isFirstLaunch = false;
         });
       },
@@ -99,52 +110,7 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
 
   @override
   Widget build(BuildContext context) {
-    if (currentIndex >= widget.qualifiers.length) {
-      String dominantTemperament =
-          calculateDominantTemperament(selectedTemperaments);
-      if (widget.isForceOrFaiblesse == 'FORCES') {
-        DatabaseManager.instance.updateUser(User(
-          id: widget.user.id,
-          bacYear: widget.user.bacYear,
-          comeFromCountry: widget.user.comeFromCountry,
-          comeFromTown: widget.user.comeFromTown,
-          firstnameAndLastname: widget.user.firstnameAndLastname,
-          gender: widget.user.gender,
-          phone: widget.user.phone,
-          typeOfBac: widget.user.typeOfBac,
-          dominantForceTemperament: dominantTemperament,
-          dominantWeaknessTemperament: widget.user.dominantWeaknessTemperament,
-          temperament: widget.user.temperament,
-          skills: widget.user.skills,
-        ));
-      }
-      if (widget.isForceOrFaiblesse == 'FAIBLESSES') {
-        DatabaseManager.instance.updateUser(User(
-          id: widget.user.id,
-          bacYear: widget.user.bacYear,
-          comeFromCountry: widget.user.comeFromCountry,
-          comeFromTown: widget.user.comeFromTown,
-          firstnameAndLastname: widget.user.firstnameAndLastname,
-          gender: widget.user.gender,
-          phone: widget.user.phone,
-          typeOfBac: widget.user.typeOfBac,
-          dominantForceTemperament: widget.user.dominantForceTemperament,
-          dominantWeaknessTemperament: dominantTemperament,
-          temperament: widget.user.temperament,
-          skills: widget.user.skills,
-        ));
-      }
-      DatabaseManager.instance.getLoggedUser().then(
-        (value) {
-          setState(() {
-            newUser = value;
-          });
-        },
-      );
-      return FullPersonalityTest(
-        user: newUser == null ? widget.user : newUser!,
-      );
-    }
+    launchPop();
 
     List<Qualifier> currentBatch =
         getNextBatch(widget.qualifiers, currentIndex);
@@ -322,7 +288,7 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
                   titleColor:
                       isSelect ? Colors.white : Colors.grey.withOpacity(0.3),
                   lighting: isSelect,
-                  event: () {
+                  event: () async {
                     setState(() {
                       selectedTemperaments
                           .add(currentBatch[currentBatchIndex].temperament);
@@ -330,8 +296,64 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
                       progressBar = progressBar + 2.5;
                       currentIndex += 4;
                     });
+                    if (currentIndex >= widget.qualifiers.length) {
+                      String dominantTemperament =
+                          calculateDominantTemperament(selectedTemperaments);
+                      if (widget.isForceOrFaiblesse == 'FORCES') {
+                        await updateUser(User(
+                          id: widget.user.id,
+                          bacYear: widget.user.bacYear,
+                          comeFromCountry: widget.user.comeFromCountry,
+                          comeFromTown: widget.user.comeFromTown,
+                          firstnameAndLastname:
+                              widget.user.firstnameAndLastname,
+                          gender: widget.user.gender,
+                          phone: widget.user.phone,
+                          typeOfBac: widget.user.typeOfBac,
+                          dominantForceTemperament: dominantTemperament,
+                          dominantWeaknessTemperament:
+                              widget.user.dominantWeaknessTemperament,
+                          temperament: widget.user.temperament,
+                          skills: widget.user.skills,
+                        ));
+                      }
+                      if (widget.isForceOrFaiblesse == 'FAIBLESSES') {
+                        await updateUser(User(
+                          id: widget.user.id,
+                          bacYear: widget.user.bacYear,
+                          comeFromCountry: widget.user.comeFromCountry,
+                          comeFromTown: widget.user.comeFromTown,
+                          firstnameAndLastname:
+                              widget.user.firstnameAndLastname,
+                          gender: widget.user.gender,
+                          phone: widget.user.phone,
+                          typeOfBac: widget.user.typeOfBac,
+                          dominantForceTemperament:
+                              widget.user.dominantForceTemperament,
+                          dominantWeaknessTemperament: dominantTemperament,
+                          temperament: widget.user.temperament,
+                          skills: widget.user.skills,
+                        ));
+                      }
 
-                    if (progressBar == 30) {
+                      final logedUser = await getLoggedUser();
+                      Navigator.push(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.scale,
+                              alignment: Alignment.center,
+                              duration: const Duration(milliseconds: 500),
+                              reverseDuration:
+                                  const Duration(milliseconds: 500),
+                              curve: Curves.ease,
+                              childCurrent: TemperamentTestView(
+                                  qualifiers: widget.qualifiers,
+                                  onQuizCompleted: widget.onQuizCompleted,
+                                  isForceOrFaiblesse: widget.isForceOrFaiblesse,
+                                  user: widget.user),
+                              child: FullPersonalityTest(user: logedUser!)));
+                    }
+                    if (progressBar == 10) {
                       AwesomeDialog(
                         context: context,
                         animType: AnimType.scale,
@@ -351,7 +373,7 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
                       ).show();
                     }
 
-                    if (progressBar == 55) {
+                    if (progressBar == 40) {
                       AwesomeDialog(
                         context: context,
                         animType: AnimType.scale,
@@ -370,7 +392,25 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
                         btnOkOnPress: () {},
                       ).show();
                     }
-
+                    if (progressBar == 60) {
+                      AwesomeDialog(
+                        context: context,
+                        animType: AnimType.scale,
+                        dialogType: DialogType.info,
+                        btnOkText: "D'ACCORD",
+                        btnOkColor: ktertiaryColor,
+                        body: Center(
+                            child: Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 20),
+                          child: const Text(
+                            "Prends ton temps pour choisir le qualificatif qui te décris le mieux",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        )),
+                        btnOkOnPress: () {},
+                      ).show();
+                    }
                     if (progressBar == 80) {
                       AwesomeDialog(
                         context: context,
@@ -401,10 +441,5 @@ class _TemperamentTestViewState extends State<TemperamentTestView> {
         ),
       ),
     ));
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }

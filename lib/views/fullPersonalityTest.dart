@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:success/constants.dart';
 import 'package:success/models/user.dart';
+import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/resultScreen.dart';
 import 'package:success/views/temperamentTestView.dart';
 
@@ -12,25 +14,9 @@ class FullPersonalityTest extends StatefulWidget {
 }
 
 class _FullPersonalityTestState extends State<FullPersonalityTest> {
-  String? dominantForceTemperament;
-  String? dominantWeaknessTemperament;
-
-  void onForceQuizCompleted() {
-    setState(() {
-      dominantForceTemperament = widget.user.dominantForceTemperament;
-    });
-  }
-
-  void onWeaknessQuizCompleted() {
-    setState(() {
-      dominantWeaknessTemperament = widget.user.dominantWeaknessTemperament;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    if (widget.user.dominantForceTemperament == "" &&
-        dominantForceTemperament == null) {
+    if (widget.user.dominantForceTemperament == "") {
       return TemperamentTestView(
         user: widget.user,
         qualifiers: forceQualifiers,
@@ -39,8 +25,7 @@ class _FullPersonalityTestState extends State<FullPersonalityTest> {
       );
     }
 
-    if (widget.user.dominantWeaknessTemperament == "" &&
-        dominantWeaknessTemperament == null) {
+    if (widget.user.dominantWeaknessTemperament == "") {
       return TemperamentTestView(
         user: widget.user,
         qualifiers: faiblesseQualifiers,

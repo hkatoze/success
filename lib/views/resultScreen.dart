@@ -8,8 +8,10 @@ import 'package:success/constants.dart';
 import 'package:success/models/personalityTestResult.dart';
 import 'package:success/models/user.dart';
 import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/components/defaultBtn.dart';
 import 'package:success/views/mainview.dart';
+import 'package:success/views/sectorsListview.dart';
 import 'package:success/views/startTemperamentTestView.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -60,7 +62,7 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
             ),
             btnOkOnPress: () async {
-              DatabaseManager.instance.updateUser(User(
+              updateUser(User(
                 id: widget.user.id,
                 bacYear: widget.user.bacYear,
                 comeFromCountry: widget.user.comeFromCountry,
@@ -75,7 +77,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 skills: widget.user.skills,
               ));
 
-              final user = await DatabaseManager.instance.getLoggedUser();
+              final user = await getLoggedUser();
 
               Navigator.push(
                   context,
@@ -254,12 +256,41 @@ class _ResultScreenState extends State<ResultScreen> {
                     titleColor: Colors.white,
                     lighting: true,
                     event: () {
+                      Navigator.push(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.scale,
+                              alignment: Alignment.center,
+                              duration: const Duration(milliseconds: 900),
+                              reverseDuration:
+                                  const Duration(milliseconds: 900),
+                              curve: Curves.ease,
+                              childCurrent: ResultScreen(
+                                user: widget.user,
+                                dominantTemperament: widget.dominantTemperament,
+                              ),
+                              child: SectorsListview(
+                                user: widget.user,
+                              )));
+                    },
+                    titleSize: 16,
+                    title: "DECOUVRIR MES FILIRES",
+                    borderColor: ktertiaryColor,
+                    bgColor: ktertiaryColor),
+                const SizedBox(
+                  height: 10,
+                ),
+                DefaultBtn(
+                    width: kWidth(context) * 0.9,
+                    titleColor: Colors.white,
+                    lighting: false,
+                    event: () {
                       confirmResetPopup();
                     },
                     titleSize: 16,
                     title: "REFAIRE LE TEST",
-                    borderColor: ktertiaryColor,
-                    bgColor: ktertiaryColor)
+                    borderColor: ksecondaryColor,
+                    bgColor: ksecondaryColor)
               ],
             ),
           ),

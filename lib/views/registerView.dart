@@ -10,6 +10,7 @@ import 'package:page_transition/page_transition.dart';
 import 'package:success/constants.dart';
 import 'package:success/models/user.dart';
 import 'package:success/services/local_db_services.dart';
+import 'package:success/services/local_db_sharepref.dart';
 import 'package:success/views/components/defaultBtn.dart';
 import 'package:success/views/components/defaultTextField.dart';
 import 'package:success/views/components/infosItem.dart';
@@ -36,7 +37,7 @@ class _RegisterViewState extends State<RegisterView> {
   }
 
   void logout() async {
-    await DatabaseManager.instance.clearDatabase();
+    await clearPreferences();
   }
 
   @override
@@ -299,7 +300,7 @@ class _AnswerToResponseState extends State<AnswerToResponse> {
               width: kWidth(context) * 0.9,
               titleColor: Colors.white,
               event: () async {
-                await DatabaseManager.instance.addUser(const User(
+                await addUser(User(
                     id: 1,
                     bacYear: "",
                     comeFromCountry: "",
@@ -363,7 +364,7 @@ class _RegisterInformationsState extends State<RegisterInformations> {
           isSelect = true;
         });
       }
-      DatabaseManager.instance.updateUser(User(
+      updateUser(User(
         id: user!.id,
         bacYear: user!.bacYear,
         comeFromCountry: user!.comeFromCountry,
@@ -372,10 +373,10 @@ class _RegisterInformationsState extends State<RegisterInformations> {
         gender: user!.gender,
         phone: user!.phone,
         typeOfBac: user!.typeOfBac,
-        dominantForceTemperament: user!.dominantForceTemperament,
-        dominantWeaknessTemperament: user!.dominantWeaknessTemperament,
-        temperament: user!.temperament,
-        skills: user!.skills,
+        dominantForceTemperament: "",
+        dominantWeaknessTemperament: "",
+        temperament: "",
+        skills: "",
       ));
     });
     phoneController.addListener(() {
@@ -384,7 +385,7 @@ class _RegisterInformationsState extends State<RegisterInformations> {
           isSelect = true;
         });
       }
-      DatabaseManager.instance.updateUser(User(
+      updateUser(User(
         id: user!.id,
         bacYear: user!.bacYear,
         comeFromCountry: user!.comeFromCountry,
@@ -393,16 +394,16 @@ class _RegisterInformationsState extends State<RegisterInformations> {
         gender: user!.gender,
         phone: phoneController.text,
         typeOfBac: user!.typeOfBac,
-        dominantForceTemperament: user!.dominantForceTemperament,
-        dominantWeaknessTemperament: user!.dominantWeaknessTemperament,
-        temperament: user!.temperament,
-        skills: user!.skills,
+        dominantForceTemperament: "",
+        dominantWeaknessTemperament: "",
+        temperament: "",
+        skills: "",
       ));
     });
   }
 
   void fetchUserInfos() async {
-    final User? loggedUser = await DatabaseManager.instance.getLoggedUser();
+    final User? loggedUser = await getLoggedUser();
 
     setState(() {
       user = loggedUser;

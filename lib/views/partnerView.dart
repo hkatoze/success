@@ -40,7 +40,7 @@ class _WebviewPageState extends State<WebviewPage> {
     // #enddocregion platform_features
 
     controller
-      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      // ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
       ..setNavigationDelegate(
         NavigationDelegate(

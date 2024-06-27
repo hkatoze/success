@@ -5,34 +5,35 @@ import 'package:success/models/youtubeVideo.dart';
 
 const apiKey = "AIzaSyBkrA3Tkjasc9fxr5imzmtq5f62DQLT0Uc";
 const channelId = "UCpJQwwIKI6_W6K6CVGDQQlA";
+const playlistId = "PLl2TDLqV-fdY4Is92ib5aF2Hz29Oev0RQ";
+
 Future<List<YoutubeVideo>> fetchVideos() async {
   List<YoutubeVideo> allVideos = [];
   String? nextPageToken;
 
   do {
-    final searchUrl = 'https://www.googleapis.com/youtube/v3/search'
+    final playlistItemsUrl =
+        'https://www.googleapis.com/youtube/v3/playlistItems'
         '?key=$apiKey'
-        '&channelId=$channelId'
+        '&playlistId=$playlistId'
         '&part=snippet'
-        '&order=date'
         '&maxResults=50'
         '&pageToken=${nextPageToken ?? ''}';
 
-    final searchResponse = await http.get(Uri.parse(searchUrl));
+    final playlistItemsResponse = await http.get(Uri.parse(playlistItemsUrl));
 
-    if (searchResponse.statusCode == 200) {
-      final searchData = json.decode(searchResponse.body);
-      final List videosJson = searchData['items'];
+    if (playlistItemsResponse.statusCode == 200) {
+      final playlistItemsData = json.decode(playlistItemsResponse.body);
+      final List videosJson = playlistItemsData['items'];
 
       List<dynamic> videoIds = videosJson
-          .where((video) => video['id']['kind'] == 'youtube#video')
-          .map((video) => video['id']['videoId'])
+          .map((video) => video['snippet']['resourceId']['videoId'])
           .toList();
 
       final List<YoutubeVideo> videos = await fetchVideoDetails(videoIds);
       allVideos.addAll(videos);
 
-      nextPageToken = searchData['nextPageToken'];
+      nextPageToken = playlistItemsData['nextPageToken'];
     } else {
       throw Exception('Erreur de chargement des vidéos');
     }
