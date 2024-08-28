@@ -1,0 +1,149 @@
+Politique de confidentialité pour le succès
+
+politique de confidentialité
+Dernière mise à jour : 20 août 2024
+
+Cette politique de confidentialité décrit nos politiques et procédures sur la collecte, l'utilisation et la divulgation de vos informations lorsque vous utilisez le service et vous informe de vos droits en matière de confidentialité et de la manière dont la loi vous protège.
+
+Nous utilisons vos données personnelles pour fournir et améliorer le service. En utilisant le service, vous acceptez la collecte et l'utilisation d'informations conformément à la présente politique de confidentialité. Cette politique de confidentialité a été créée à l'aide du générateur de politique de confidentialité gratuit .
+
+Interprétation et définitions
+Interprétation
+Les mots dont la lettre initiale est une majuscule ont des significations définies dans les conditions suivantes. Les définitions suivantes ont la même signification, qu'elles apparaissent au singulier ou au pluriel.
+
+Définitions
+Aux fins de la présente politique de confidentialité :
+
+Compte désigne un compte unique créé pour vous permettre d'accéder à notre Service ou à certaines parties de notre Service.
+
+Une filiale désigne une entité qui contrôle, est contrôlée par ou est sous contrôle commun avec une partie, où « contrôle » signifie la propriété de 50 % ou plus des actions, des participations ou d'autres titres donnant droit de vote pour l'élection des administrateurs ou d'autres autorités de gestion.
+
+Application fait référence à Success, le logiciel fourni par la Société.
+
+Société (désignée par « la Société », « Nous », « Notre » ou « Nos » dans le présent Contrat) désigne IST CAMPUS OUAGA 2000, Cité Azimmo Ouaga 2000.
+
+Pays fait référence à : Burkina Faso
+
+Appareil désigne tout appareil pouvant accéder au Service tel qu'un ordinateur, un téléphone portable ou une tablette numérique.
+
+Les données personnelles sont toutes les informations relatives à une personne identifiée ou identifiable.
+
+Le Service fait référence à l'Application.
+
+Le prestataire de services désigne toute personne physique ou morale qui traite les données pour le compte de la Société. Il fait référence aux sociétés tierces ou aux personnes employées par la Société pour faciliter le Service, pour fournir le Service au nom de la Société, pour exécuter des services liés au Service ou pour aider la Société à analyser la manière dont le Service est utilisé.
+
+Les données d'utilisation font référence aux données collectées automatiquement, générées soit par l'utilisation du Service, soit par l'infrastructure du Service elle-même (par exemple, la durée de visite d'une page).
+
+Vous désigne la personne qui accède au Service ou l'utilise, ou la société ou toute autre entité juridique au nom de laquelle cette personne accède au Service ou l'utilise, selon le cas.
+
+Collecte et utilisation de vos données personnelles
+Types de données collectées
+Données personnelles
+Lors de l'utilisation de notre service, nous pouvons vous demander de nous fournir certaines informations personnelles identifiables qui peuvent être utilisées pour vous contacter ou vous identifier. Les informations personnelles identifiables peuvent inclure, sans toutefois s'y limiter :
+
+Prénom et nom
+
+Numéro de téléphone
+
+Adresse, État, Province, Code postal, Ville
+
+Données d'utilisation
+
+Données d'utilisation
+Les données d’utilisation sont collectées automatiquement lors de l’utilisation du Service.
+
+Les données d'utilisation peuvent inclure des informations telles que l'adresse de protocole Internet (par exemple l'adresse IP) de votre appareil, le type de navigateur, la version du navigateur, les pages de notre service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages, les identifiants uniques de l'appareil et d'autres données de diagnostic.
+
+Lorsque vous accédez au Service par ou via un appareil mobile, nous pouvons collecter automatiquement certaines informations, y compris, mais sans s'y limiter, le type d'appareil mobile que vous utilisez, l'identifiant unique de votre appareil mobile, l'adresse IP de votre appareil mobile, votre système d'exploitation mobile, le type de navigateur Internet mobile que vous utilisez, les identifiants d'appareils uniques et d'autres données de diagnostic.
+
+Nous pouvons également collecter des informations que votre navigateur envoie chaque fois que vous visitez notre service ou lorsque vous accédez au service par ou via un appareil mobile.
+
+Utilisation de vos données personnelles
+La Société peut utiliser les Données Personnelles aux fins suivantes :
+
+Pour fournir et maintenir notre Service , y compris pour surveiller l’utilisation de notre Service.
+
+Pour gérer votre compte : pour gérer votre inscription en tant qu'utilisateur du Service. Les données personnelles que vous fournissez peuvent vous donner accès à différentes fonctionnalités du Service qui vous sont accessibles en tant qu'utilisateur enregistré.
+
+Pour l'exécution d'un contrat : l'élaboration, le respect et l'exécution du contrat d'achat des produits, articles ou services que vous avez achetés ou de tout autre contrat avec nous via le Service.
+
+Pour vous contacter : Pour vous contacter par courrier électronique, appels téléphoniques, SMS ou autres formes équivalentes de communication électronique, telles que les notifications push d'une application mobile concernant les mises à jour ou les communications informatives liées aux fonctionnalités, produits ou services contractuels, y compris les mises à jour de sécurité, lorsque cela est nécessaire ou raisonnable pour leur mise en œuvre.
+
+Pour vous fournir des nouvelles, des offres spéciales et des informations générales sur d'autres biens, services et événements que nous proposons et qui sont similaires à ceux que vous avez déjà achetés ou sur lesquels vous avez demandé des renseignements, sauf si vous avez choisi de ne pas recevoir ces informations.
+
+Pour gérer vos demandes : Pour répondre et gérer vos demandes auprès de nous.
+
+Pour les transferts d'entreprise : nous pouvons utiliser vos informations pour évaluer ou mener une fusion, une cession, une restructuration, une réorganisation, une dissolution ou toute autre vente ou transfert de tout ou partie de nos actifs, que ce soit dans le cadre d'une entreprise en activité ou d'une faillite, d'une liquidation ou d'une procédure similaire, dans laquelle les données personnelles que nous détenons sur les utilisateurs de nos services font partie des actifs transférés.
+
+À d'autres fins : Nous pouvons utiliser vos informations à d'autres fins, telles que l'analyse de données, l'identification des tendances d'utilisation, la détermination de l'efficacité de nos campagnes promotionnelles et pour évaluer et améliorer notre service, nos produits, nos services, notre marketing et votre expérience.
+
+Nous pouvons partager vos informations personnelles dans les situations suivantes :
+
+Avec les prestataires de services : nous pouvons partager vos informations personnelles avec les prestataires de services pour surveiller et analyser l'utilisation de notre service, pour vous contacter.
+Pour les transferts d'entreprise : nous pouvons partager ou transférer vos informations personnelles dans le cadre ou au cours de négociations relatives à toute fusion, vente d'actifs de la Société, financement ou acquisition de tout ou partie de notre entreprise à une autre société.
+Avec des sociétés affiliées : nous pouvons partager vos informations avec nos sociétés affiliées, auquel cas nous exigerons de ces sociétés affiliées qu'elles respectent la présente politique de confidentialité. Les sociétés affiliées comprennent notre société mère et toutes les autres filiales, partenaires de coentreprise ou autres sociétés que nous contrôlons ou qui sont sous contrôle commun avec nous.
+Avec des partenaires commerciaux : Nous pouvons partager vos informations avec nos partenaires commerciaux pour vous proposer certains produits, services ou promotions.
+Avec d’autres utilisateurs : lorsque vous partagez des informations personnelles ou interagissez d’une autre manière dans les espaces publics avec d’autres utilisateurs, ces informations peuvent être consultées par tous les utilisateurs et peuvent être diffusées publiquement à l’extérieur.
+Avec votre consentement : Nous pouvons divulguer vos informations personnelles à toute autre fin avec votre consentement.
+Conservation de vos données personnelles
+La Société conservera vos données personnelles uniquement aussi longtemps que nécessaire aux fins énoncées dans la présente politique de confidentialité. Nous conserverons et utiliserons vos données personnelles dans la mesure nécessaire pour nous conformer à nos obligations légales (par exemple, si nous sommes tenus de conserver vos données pour nous conformer aux lois applicables), résoudre des litiges et appliquer nos accords et politiques juridiques.
+
+La Société conservera également les Données d'utilisation à des fins d'analyse interne. Les Données d'utilisation sont généralement conservées pendant une période plus courte, sauf lorsque ces données sont utilisées pour renforcer la sécurité ou pour améliorer la fonctionnalité de Notre Service, ou lorsque Nous sommes légalement obligés de conserver ces données pendant des périodes plus longues.
+
+Transfert de vos données personnelles
+Vos informations, y compris vos données personnelles, sont traitées dans les bureaux d'exploitation de la société et dans tout autre lieu où se trouvent les parties impliquées dans le traitement. Cela signifie que ces informations peuvent être transférées vers des ordinateurs situés en dehors de votre état, province, pays ou autre juridiction gouvernementale, où les lois sur la protection des données peuvent différer de celles de votre juridiction, et y être conservées.
+
+Votre consentement à cette politique de confidentialité suivi de votre soumission de ces informations représente votre accord à ce transfert.
+
+La Société prendra toutes les mesures raisonnablement nécessaires pour garantir que vos données sont traitées en toute sécurité et conformément à la présente Politique de confidentialité et aucun transfert de vos données personnelles n'aura lieu vers une organisation ou un pays à moins que des contrôles adéquats ne soient en place, y compris la sécurité de vos données et autres informations personnelles.
+
+Supprimer vos données personnelles
+Vous avez le droit de supprimer ou de demander que nous vous aidions à supprimer les données personnelles que nous avons collectées à votre sujet.
+
+Notre service peut vous donner la possibilité de supprimer certaines informations vous concernant au sein du service.
+
+Vous pouvez mettre à jour, modifier ou supprimer vos informations à tout moment en vous connectant à votre compte, si vous en avez un, et en visitant la section des paramètres du compte qui vous permet de gérer vos informations personnelles. Vous pouvez également nous contacter pour demander l'accès, la correction ou la suppression de toute information personnelle que vous nous avez fournie.
+
+Veuillez toutefois noter que nous pouvons être amenés à conserver certaines informations lorsque nous avons une obligation légale ou une base légale pour le faire.
+
+Divulgation de vos données personnelles
+Transactions commerciales
+Si la Société est impliquée dans une fusion, une acquisition ou une vente d'actifs, vos données personnelles peuvent être transférées. Nous vous informerons avant que vos données personnelles ne soient transférées et ne soient soumises à une politique de confidentialité différente.
+
+Application de la loi
+Dans certaines circonstances, la Société peut être amenée à divulguer vos Données Personnelles si la loi l'exige ou en réponse à des demandes valables des autorités publiques (par exemple, un tribunal ou une agence gouvernementale).
+
+Autres exigences légales
+La Société peut divulguer vos données personnelles si elle estime de bonne foi qu'une telle action est nécessaire pour :
+
+Se conformer à une obligation légale
+Protéger et défendre les droits ou la propriété de la Société
+Prévenir ou enquêter sur d'éventuels actes répréhensibles en rapport avec le Service
+Protéger la sécurité personnelle des utilisateurs du service ou du public
+Protégez-vous contre la responsabilité légale
+Sécurité de vos données personnelles
+La sécurité de vos données personnelles est importante pour nous, mais n'oubliez pas qu'aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100 %. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos données personnelles, nous ne pouvons pas garantir leur sécurité absolue.
+
+Confidentialité des enfants
+Notre service ne s'adresse pas aux personnes de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles identifiables auprès de personnes de moins de 13 ans. Si vous êtes un parent ou un tuteur et que vous savez que votre enfant nous a fourni des données personnelles, veuillez nous contacter. Si nous apprenons que nous avons collecté des données personnelles auprès d'une personne de moins de 13 ans sans vérification du consentement parental, nous prenons des mesures pour supprimer ces informations de nos serveurs.
+
+Si nous devons nous appuyer sur le consentement comme base juridique pour le traitement de vos informations et que votre pays exige le consentement d'un parent, nous pouvons exiger le consentement de votre parent avant de collecter et d'utiliser ces informations.
+
+Liens vers d'autres sites Web
+Notre service peut contenir des liens vers d'autres sites Web qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez redirigé vers le site de ce tiers. Nous vous conseillons vivement de consulter la politique de confidentialité de chaque site que vous visitez.
+
+Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site ou service tiers.
+
+Modifications de la présente politique de confidentialité
+Nous sommes susceptibles de mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page.
+
+Nous vous informerons par e-mail et/ou par un avis visible sur notre service, avant que le changement ne devienne effectif et mettrons à jour la date de « dernière mise à jour » en haut de cette politique de confidentialité.
+
+Il vous est conseillé de consulter régulièrement la présente politique de confidentialité pour prendre connaissance de tout changement. Les modifications apportées à la présente politique de confidentialité entrent en vigueur dès leur publication sur cette page.
+
+Contactez-nous
+Si vous avez des questions sur cette politique de confidentialité, vous pouvez nous contacter :
+
+Par email : istouaga2000@gmail.com
+
+Par téléphone : +22651306464

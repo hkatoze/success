@@ -1,0 +1,446 @@
+-- Merging decision tree log ---
+application
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:6:5-38:19
+MERGED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-48:19
+MERGED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-48:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\harou\.gradle\caches\transforms-3\49a328338e922124806ccd3fc0f51325\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\harou\.gradle\caches\transforms-3\49a328338e922124806ccd3fc0f51325\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\harou\.gradle\caches\transforms-3\3361162a8dac4c9eec2e4c0c289ba97e\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\harou\.gradle\caches\transforms-3\3361162a8dac4c9eec2e4c0c289ba97e\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\130ec24a7ba5bea536878b131b7aad1d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\130ec24a7ba5bea536878b131b7aad1d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+	android:name
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+MERGED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+MERGED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-50:12
+MERGED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:fluttertoast] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\fluttertoast-8.2.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.4\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:permission_handler_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_android-10.3.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:rive_common] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\rive_common-0.4.8\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.2.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:sms_autofill] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sms_autofill-2.4.0\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:webview_flutter_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\52327bdbb6080289c26b0e652865ef2f\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\8f9da0f64264dc73e6e03d7a484ecac4\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\0a894b43de41ded55d242ec38becce46\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.8.0] C:\Users\harou\.gradle\caches\transforms-3\3ea0f643dd03f462c2d833c8a16e72ff\transformed\webkit-1.8.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.browser:browser:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\df2fb0e8dd9abe2887c446992e95cd5c\transformed\browser-1.6.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\921a1623a3e22d0b409d0a15efd80178\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\harou\.gradle\caches\transforms-3\ac93d8b897246031078baf230a8560bf\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\harou\.gradle\caches\transforms-3\08937c70603de4d5886b3561168d8061\transformed\jetified-play-services-auth-base-18.0.10\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\harou\.gradle\caches\transforms-3\49a328338e922124806ccd3fc0f51325\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\harou\.gradle\caches\transforms-3\3361162a8dac4c9eec2e4c0c289ba97e\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\harou\.gradle\caches\transforms-3\e1a8ab7591f70d38e3df4e6c901deb4c\transformed\fragment-1.5.7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\95d642d7f06ba7fbb91e9553e7109860\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\d37ed65e8d84652608b73958a21e2a9f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\c2e15cbf6451a58c56415193de212fe1\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\92df1ff4d884ea6c4b73c397c142d3fc\transformed\loader-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\5faef2be53525ad07788eeae73d67980\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\793c7493000b2a6ea27c217c23afc346\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\6c1f0a7d44d85cc22002a279eb3a1a72\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\31d8ecaed6fb5372265f82f6c5c46fc9\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\b217b849fdc27da6be2fc05e40ece3b1\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\7f6ab1ed191a1a4209631981f9f65326\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\faad96a3ad0c394650e69afa89713091\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\355c81dd1fd76daa5b32276bb998db25\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\8fa783cf71ada89d3d51d1d60d784261\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\harou\.gradle\caches\transforms-3\e303218fd01dc8564608f66cb84c9455\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\a30d13c70d8a1e5c115178a364668916\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\130ec24a7ba5bea536878b131b7aad1d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\872ff04feeacc6a9131a44923d08ac73\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\7f5d8b5749cc1386fcaf4f29e3be7a7f\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\harou\.gradle\caches\transforms-3\c65a767e0e8f960f4b085f2178d1faf7\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\harou\.gradle\caches\transforms-3\ef6ea4a0ff351fe6d49fb691b94ce77f\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:2:5-66
+MERGED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:2:5-66
+MERGED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:2:5-66
+	android:name
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:2:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:3:5-69
+	android:name
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:3:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-sdk
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+MERGED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\fluttertoast-8.2.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\fluttertoast-8.2.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.4\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.4\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:permission_handler_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_android-10.3.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:permission_handler_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_android-10.3.6\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:rive_common] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\rive_common-0.4.8\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:rive_common] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\rive_common-0.4.8\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.2.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.2.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sms_autofill] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sms_autofill-2.4.0\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sms_autofill] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sms_autofill-2.4.0\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.2\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\52327bdbb6080289c26b0e652865ef2f\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\52327bdbb6080289c26b0e652865ef2f\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\8f9da0f64264dc73e6e03d7a484ecac4\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\8f9da0f64264dc73e6e03d7a484ecac4\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\0a894b43de41ded55d242ec38becce46\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\harou\.gradle\caches\transforms-3\0a894b43de41ded55d242ec38becce46\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.8.0] C:\Users\harou\.gradle\caches\transforms-3\3ea0f643dd03f462c2d833c8a16e72ff\transformed\webkit-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.webkit:webkit:1.8.0] C:\Users\harou\.gradle\caches\transforms-3\3ea0f643dd03f462c2d833c8a16e72ff\transformed\webkit-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\df2fb0e8dd9abe2887c446992e95cd5c\transformed\browser-1.6.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\df2fb0e8dd9abe2887c446992e95cd5c\transformed\browser-1.6.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\921a1623a3e22d0b409d0a15efd80178\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\921a1623a3e22d0b409d0a15efd80178\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\harou\.gradle\caches\transforms-3\ac93d8b897246031078baf230a8560bf\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\harou\.gradle\caches\transforms-3\ac93d8b897246031078baf230a8560bf\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\harou\.gradle\caches\transforms-3\08937c70603de4d5886b3561168d8061\transformed\jetified-play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\harou\.gradle\caches\transforms-3\08937c70603de4d5886b3561168d8061\transformed\jetified-play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\harou\.gradle\caches\transforms-3\49a328338e922124806ccd3fc0f51325\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\harou\.gradle\caches\transforms-3\49a328338e922124806ccd3fc0f51325\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\harou\.gradle\caches\transforms-3\3361162a8dac4c9eec2e4c0c289ba97e\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\harou\.gradle\caches\transforms-3\3361162a8dac4c9eec2e4c0c289ba97e\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\harou\.gradle\caches\transforms-3\e1a8ab7591f70d38e3df4e6c901deb4c\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\harou\.gradle\caches\transforms-3\e1a8ab7591f70d38e3df4e6c901deb4c\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\95d642d7f06ba7fbb91e9553e7109860\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\harou\.gradle\caches\transforms-3\95d642d7f06ba7fbb91e9553e7109860\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\d37ed65e8d84652608b73958a21e2a9f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\d37ed65e8d84652608b73958a21e2a9f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\c2e15cbf6451a58c56415193de212fe1\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\c2e15cbf6451a58c56415193de212fe1\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\92df1ff4d884ea6c4b73c397c142d3fc\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\92df1ff4d884ea6c4b73c397c142d3fc\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\5faef2be53525ad07788eeae73d67980\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\5faef2be53525ad07788eeae73d67980\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\793c7493000b2a6ea27c217c23afc346\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\793c7493000b2a6ea27c217c23afc346\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\6c1f0a7d44d85cc22002a279eb3a1a72\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\6c1f0a7d44d85cc22002a279eb3a1a72\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\31d8ecaed6fb5372265f82f6c5c46fc9\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\31d8ecaed6fb5372265f82f6c5c46fc9\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\b217b849fdc27da6be2fc05e40ece3b1\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\b217b849fdc27da6be2fc05e40ece3b1\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\7f6ab1ed191a1a4209631981f9f65326\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\harou\.gradle\caches\transforms-3\7f6ab1ed191a1a4209631981f9f65326\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\faad96a3ad0c394650e69afa89713091\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\faad96a3ad0c394650e69afa89713091\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\355c81dd1fd76daa5b32276bb998db25\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\355c81dd1fd76daa5b32276bb998db25\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\8fa783cf71ada89d3d51d1d60d784261\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\8fa783cf71ada89d3d51d1d60d784261\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\harou\.gradle\caches\transforms-3\e303218fd01dc8564608f66cb84c9455\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\harou\.gradle\caches\transforms-3\e303218fd01dc8564608f66cb84c9455\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\a30d13c70d8a1e5c115178a364668916\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\a30d13c70d8a1e5c115178a364668916\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\130ec24a7ba5bea536878b131b7aad1d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\130ec24a7ba5bea536878b131b7aad1d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\872ff04feeacc6a9131a44923d08ac73\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\872ff04feeacc6a9131a44923d08ac73\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\7f5d8b5749cc1386fcaf4f29e3be7a7f\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\harou\.gradle\caches\transforms-3\7f5d8b5749cc1386fcaf4f29e3be7a7f\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\harou\.gradle\caches\transforms-3\c65a767e0e8f960f4b085f2178d1faf7\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\harou\.gradle\caches\transforms-3\c65a767e0e8f960f4b085f2178d1faf7\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\harou\.gradle\caches\transforms-3\ef6ea4a0ff351fe6d49fb691b94ce77f\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\harou\.gradle\caches\transforms-3\ef6ea4a0ff351fe6d49fb691b94ce77f\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\PROJECTS\DEV\success\android\app\src\debug\AndroidManifest.xml
+queries
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-90
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-87
+activity#com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-20:47
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+	android:configChanges
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-137
+	android:theme
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-44
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-112
+activity#com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-24:55
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+	android:theme
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-52
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-120
+activity#com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-28:55
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-37
+	android:theme
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-52
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-114
+activity#com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-33:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-37
+	android:theme
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-134
+activity#com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-38:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-37
+	android:theme
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-52
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-128
+receiver#com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:40
+	android:enabled
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-35
+	android:exported
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-119
+meta-data#io.flutter.embedded_views_preview
+ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+	android:value
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+	android:name
+		ADDED from [:flutter_inappwebview_android] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_inappwebview_android-1.0.13\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-61
+uses-permission#android.permission.CALL_PHONE
+ADDED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-66
+uses-feature#android.hardware.telephony
+ADDED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:flutter_phone_direct_caller] C:\Users\harou\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-50
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\harou\.gradle\caches\transforms-3\78fbd64af62dbdf102ba7c817970421b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\harou\.gradle\caches\transforms-3\16015a2aa5a1e6e909f64ed05b3802fb\transformed\jetified-play-services-auth-21.2.0\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\08b8b0c397ded9cbecdea18eb603bcf2\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\harou\.gradle\caches\transforms-3\eb44e70dfc87ce382182ee0f48770cd6\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\harou\.gradle\caches\transforms-3\719ef72f00b0d8144d795a9cf7ec0f33\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\harou\.gradle\caches\transforms-3\b707eb6ca427186bce3f6f49a7313850\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\harou\.gradle\caches\transforms-3\036e1d7bfc54871c92f7c47615769fbd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+permission#com.example.success.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+uses-permission#com.example.success.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\harou\.gradle\caches\transforms-3\68092c50d93ba4008ff635d638432562\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\harou\.gradle\caches\transforms-3\23bd5f9a4f45be60dcd47044375cf5bf\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
